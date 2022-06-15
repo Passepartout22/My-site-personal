@@ -1,0 +1,33 @@
+:root {
+    --color-primario: #FFFFFF;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.navegacion{
+
+}
+
+.contenido-navegacion {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido-navegacion .texto .h3_contenido-navegacion {
+ font-size: 1.3rem;
+ color: rgba(125, 51, 231);
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.blog {
+    
+}
+
+.blog-lenguaje-modo .blog .a_blog {
+    color: black;
+}
