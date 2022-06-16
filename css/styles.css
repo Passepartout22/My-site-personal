@@ -99,7 +99,8 @@ body {
 
 
 .banner-bg {
-    background: var(--color-bg);
+    background-image: radial-gradient(circle at 107.92% 90.56%, #d4c8ff 0, #9d9df2 50%, #6d73b0 100%);
+
     border-radius: 1.5rem;
 
     display: flex;
@@ -143,7 +144,7 @@ body {
     }
 
     .banner-bg {
-        background: var(--color-bg);
+        background-image: radial-gradient(circle at 107.92% 90.56%, #d4c8ff 0, #9d9df2 50%, #6d73b0 100%);
         border-radius: 2rem;
     }
 
@@ -181,14 +182,21 @@ body {
 
 .contenedor-sobremi {
     padding-top: 5rem;
-    margin-left: 12rem;
-    margin-right: 12rem;
+    display: inline-block;
+    text-align: center;
 }
 
-.contenido_sobremi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (min-width:768px) {
+    .contenido_sobremi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-sobremi {
+        padding-top: 5rem;
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
 }
 
 .contenido_sobremi .contenido-texto {
@@ -214,6 +222,9 @@ body {
     transition: 0.5s;
     letter-spacing: 1px;
     border-radius: 4rem;
+
+    display: inline-block;
+    text-align: center;
 }
 
 .button-container-2 button {
@@ -305,9 +316,6 @@ body {
 
 /** Banner de abajo **/
 
-.banner_bottom {
-
-}
 
 .contenido_banner_bottom {
     padding-top: 4rem;
@@ -316,8 +324,7 @@ body {
 }
 
 .contenido_banner_bottom .contenido_banner_bottom-bg {
-    background: var(--color-bg);
-
+    background-image: radial-gradient(circle at 107.92% 90.56%, #d4c8ff 0, #9d9df2 50%, #6d73b0 100%);
     clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),0 100%);
 }
 
@@ -363,4 +370,35 @@ body {
 
 .iconos-redes-sociales .color-bg{
     color: var(--color-3);
+}
+
+
+/** Footer **/
+
+.footer {
+    padding-left: 3.4rem;
+    padding-right: 3.4rem;
+}
+
+.contenido-footer {
+    background-image: linear-gradient(305deg, #c3bbff 0, #9d9df2 50%, #7b80c3 100%);
+    border-radius: 4rem;
+    
+}
+
+.texto_footer {
+    
+}
+
+.h5_texto_footer {
+    text-align: center;
+    color: var(--color-texto-banner);
+    font-family: var(--fuentePrincipal); 
+    font-size: 1rem; 
+    font-weight: normal;
+
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    
+
 }
