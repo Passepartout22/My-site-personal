@@ -17,30 +17,66 @@ body {
 
 .contenido-navegacion {
     display: flex;
-    align-items: center;
     justify-content: space-around;
 
 }
 
 .contenido-navegacion .texto .h3_contenido-navegacion {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: inherit;
     font-family: var(--fuenteSecundaria);
 
 }
 
 .blog {
-    border: 1px solid #000000;
-    border-radius: 1rem;
+    position: relative;
+    width: 150px;
+    height: 38px;
+    margin-right: auto;
+    overflow: hidden;
+    border: 1px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 4rem;
 }
 
-.blog-lenguaje-modo .blog .a_blog {
-    font-size: 1rem;
-    font-family: var(--fuentePrincipal);
-    font-weight: 400;
-    text-decoration: none;
-    line-height: 2rem;
+.blog .boton_blog {
+    width: 101%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: #000;
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+    -webkit-mask-size: 3000% 100%;
+    mask-size: 3000% 100%;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
+}
 
+.blog .boton_blog:hover {
+    -webkit-animation: ani 0.7s steps(29) forwards;
+    animation: ani 0.7s steps(29) forwards;
+}
+
+.mas_blog {
+    position: absolute;
+    color: #000;
+    text-align: center;
+    width: 101%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 8px;
+    overflow: hidden;
 }
 
 .grid {
@@ -91,8 +127,8 @@ body {
 }
 
 .contenido_imagen .imagen_banner {
-   width: 20ch;
-    
+    width: 20ch;
+
 }
 
 @media (min-width:768px) {
@@ -133,16 +169,16 @@ body {
         font-weight: 100;
         padding-bottom: 2rem;
         max-width: 48ch;
-        
+
     }
 }
 
 /** Sobre mí **/
 
 .contenedor-sobremi {
- padding-top: 5rem;
- margin-left: 12rem;
- margin-right: 12rem;
+    padding-top: 5rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
 }
 
 .contenido_sobremi {
@@ -153,16 +189,16 @@ body {
 
 .contenido_sobremi .contenido-texto {
     color: #000000;
-    
+
 }
 
 .contenido-img .imagen_redonda {
-   width: 25ch;
-   height: 25ch;
-   border-radius: 10rem;
+    width: 25ch;
+    height: 25ch;
+    border-radius: 10rem;
 }
-  
-  .button-container-2 {
+
+.button-container-2 {
     position: relative;
     width: 60%;
     height: 50px;
@@ -174,8 +210,9 @@ body {
     transition: 0.5s;
     letter-spacing: 1px;
     border-radius: 4rem;
-  }
-  .button-container-2 button {
+}
+
+.button-container-2 button {
     width: 101%;
     height: 100%;
     font-family: 'Lato', sans-serif;
@@ -192,13 +229,14 @@ body {
     cursor: pointer;
     -webkit-animation: ani2 0.7s steps(29) forwards;
     animation: ani2 0.7s steps(29) forwards;
-  }
-  .button-container-2 button:hover {
+}
+
+.button-container-2 button:hover {
     -webkit-animation: ani 0.7s steps(29) forwards;
     animation: ani 0.7s steps(29) forwards;
-  }
-  
-  .mas {
+}
+
+.mas {
     position: absolute;
     color: #000;
     text-align: center;
@@ -209,48 +247,56 @@ body {
     font-size: 20px;
     margin-top: 12px;
     overflow: hidden;
-  }
-  
-  @-webkit-keyframes ani {
+}
+
+@-webkit-keyframes ani {
     from {
-      -webkit-mask-position: 0 0;
-      mask-position: 0 0;
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
     }
+
     to {
-      -webkit-mask-position: 100% 0;
-      mask-position: 100% 0;
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
     }
-  }
-  @keyframes ani {
+}
+
+@keyframes ani {
     from {
-      -webkit-mask-position: 0 0;
-      mask-position: 0 0;
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
     }
+
     to {
-      -webkit-mask-position: 100% 0;
-      mask-position: 100% 0;
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
     }
-  }
-  @-webkit-keyframes ani2 {
+}
+
+@-webkit-keyframes ani2 {
     from {
-      -webkit-mask-position: 100% 0;
-      mask-position: 100% 0;
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
     }
+
     to {
-      -webkit-mask-position: 0 0;
-      mask-position: 0 0;
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
     }
-  }
-  @keyframes ani2 {
+}
+
+@keyframes ani2 {
     from {
-      -webkit-mask-position: 100% 0;
-      mask-position: 100% 0;
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
     }
+
     to {
-      -webkit-mask-position: 0 0;
-      mask-position: 0 0;
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
     }
-  }
-  a {
+}
+
+a {
     color: #00ff95;
-  }
+}
