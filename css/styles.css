@@ -12,7 +12,7 @@ body {
 }
 
 .navegacion {
-    padding: 1.2rem;
+    padding: 1rem;
 }
 
 .contenido-navegacion {
@@ -63,6 +63,8 @@ body {
     border-radius: 1.5rem;
 
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 
@@ -80,11 +82,17 @@ body {
 .contenido-texto .rango {
     font-size: 1.8rem;
     font-weight: 100;
+    line-height: 1.5rem;
 }
 
 .contenido-texto .descripcion {
     font-size: 1rem;
     line-height: 1.5rem;
+}
+
+.contenido_imagen .imagen_banner {
+   width: 20ch;
+    
 }
 
 @media (min-width:768px) {
@@ -101,6 +109,9 @@ body {
 
     .contenido-texto {
         color: var(--color-texto-banner);
+        padding-top: 2.5rem;
+        padding-left: 4.2rem;
+        padding-right: 4.2rem;
     }
 
     .contenido-texto .h1_contenido-texto {
@@ -120,9 +131,53 @@ body {
         font-family: var(--fuentePrincipal);
         font-size: 1.3rem;
         font-weight: 100;
-        line-height: 1.5rem;
-
-        max-width: 48ch
+        padding-bottom: 2rem;
+        max-width: 48ch;
         
     }
+}
+
+/** Sobre mí **/
+
+.contenedor-sobremi {
+ padding-top: 5rem;
+ margin-left: 12rem;
+ margin-right: 12rem;
+}
+
+.contenido_sobremi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido_sobremi .contenido-texto {
+    color: #000000;
+}
+
+.contenido-img {
+    /* margin-right: 15rem;
+    margin-left: ; */
+  
+}
+
+.contenido-img .imagen_redonda {
+   width: 25ch;
+   height: 25ch;
+   border-radius: 10rem;
+}
+
+.btn {
+    border: 1px solid #000000;
+    border-radius: 1rem;
+}
+
+.btn .boton_proyecto {
+    font-size: 1rem;
+    font-family: var(--fuentePrincipal);
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 2rem;
+    
+
 }
