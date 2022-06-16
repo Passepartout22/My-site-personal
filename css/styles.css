@@ -1,33 +1,128 @@
 :root {
-    --color-primario: #FFFFFF;
+    --color-bg: #77a6d6;
+    --color-texto-banner: #FFFFFF;
+
+    --fuentePrincipal: 'Poppins', sans-serif;
+    --fuenteSecundaria: 'Hind Madurai', sans-serif;
+
 }
 
 body {
     font-size: 1.6rem;
-    line-height: 2;
 }
 
-.navegacion{
-
+.navegacion {
+    padding: 1.2rem;
 }
 
 .contenido-navegacion {
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
 .contenido-navegacion .texto .h3_contenido-navegacion {
- font-size: 1.3rem;
- color: rgba(125, 51, 231);
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+    color: inherit;
+    font-family: var(--fuenteSecundaria);
 
 }
 
 .blog {
-    
+    border: 1px solid #000000;
+    border-radius: 1rem;
 }
 
 .blog-lenguaje-modo .blog .a_blog {
-    color: black;
+    font-size: 1rem;
+    font-family: var(--fuentePrincipal);
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 2rem;
+
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+/** Banner **/
+
+
+
+.banner-bg {
+    background: var(--color-bg);
+    border-radius: 1.5rem;
+
+    display: flex;
+}
+
+
+.contenido-texto {
+    color: var(--color-texto-banner);
+    font-family: var(--fuentePrincipal);
+    padding: 1.3rem;
+}
+
+.contenido-texto .h1_contenido-texto {
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+}
+
+.contenido-texto .rango {
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+.contenido-texto .descripcion {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+@media (min-width:768px) {
+    .contenido_main {
+        padding-top: 1.2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .banner-bg {
+        background: var(--color-bg);
+        border-radius: 2rem;
+    }
+
+    .contenido-texto {
+        color: var(--color-texto-banner);
+    }
+
+    .contenido-texto .h1_contenido-texto {
+        font-family: var(--fuentePrincipal);
+        font-size: 4.5rem;
+        font-weight: 700;
+    }
+
+    .contenido-texto .rango {
+        font-family: var(--fuenteSecundaria);
+        font-size: 2.8rem;
+        font-weight: 100;
+        line-height: 1.5rem;
+    }
+
+    .contenido-texto .descripcion {
+        font-family: var(--fuentePrincipal);
+        font-size: 1.3rem;
+        font-weight: 100;
+        line-height: 1.5rem;
+
+        max-width: 48ch
+        
+    }
 }
