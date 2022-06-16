@@ -1,6 +1,10 @@
 :root {
     --color-bg: #77a6d6;
     --color-texto-banner: #FFFFFF;
+    --color-externo: #00ff95;;
+    --color-1: #557ea3;
+    --color-2: #9a8f76;
+    --color-3: #211c30;
 
     --fuentePrincipal: 'Poppins', sans-serif;
     --fuenteSecundaria: 'Hind Madurai', sans-serif;
@@ -34,7 +38,7 @@ body {
     height: 38px;
     margin-right: auto;
     overflow: hidden;
-    border: 1px solid #000;
+    border: 1px solid var(--color-3);
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     transition: 0.5s;
@@ -49,13 +53,13 @@ body {
     font-weight: 300;
     font-size: 20px;
     letter-spacing: 1px;
-    background: #000;
+    background: var(--color-3);
     -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
     mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
     -webkit-mask-size: 3000% 100%;
     mask-size: 3000% 100%;
     border: none;
-    color: #fff;
+    color: var(--color-texto-banner);
     cursor: pointer;
     -webkit-animation: ani2 0.7s steps(29) forwards;
     animation: ani2 0.7s steps(29) forwards;
@@ -68,7 +72,7 @@ body {
 
 .mas_blog {
     position: absolute;
-    color: #000;
+    color: var(--color-3);
     text-align: center;
     width: 101%;
     font-family: 'Lato', sans-serif;
@@ -188,7 +192,7 @@ body {
 }
 
 .contenido_sobremi .contenido-texto {
-    color: #000000;
+    color: var(--color-3);
 
 }
 
@@ -204,7 +208,7 @@ body {
     height: 50px;
     margin-right: auto;
     overflow: hidden;
-    border: 1px solid #000;
+    border: 1px solid var(--color-3);
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     transition: 0.5s;
@@ -219,13 +223,13 @@ body {
     font-weight: 300;
     font-size: 20px;
     letter-spacing: 1px;
-    background: #000;
+    background: var(--color-3);
     -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
     mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
     -webkit-mask-size: 3000% 100%;
     mask-size: 3000% 100%;
     border: none;
-    color: #fff;
+    color: var(--color-texto-banner);
     cursor: pointer;
     -webkit-animation: ani2 0.7s steps(29) forwards;
     animation: ani2 0.7s steps(29) forwards;
@@ -238,7 +242,7 @@ body {
 
 .mas {
     position: absolute;
-    color: #000;
+    color: var(--color-3);
     text-align: center;
     width: 101%;
     font-family: 'Lato', sans-serif;
@@ -297,6 +301,66 @@ body {
     }
 }
 
-a {
-    color: #00ff95;
+
+
+/** Banner de abajo **/
+
+.banner_bottom {
+
+}
+
+.contenido_banner_bottom {
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.contenido_banner_bottom .contenido_banner_bottom-bg {
+    background: var(--color-bg);
+
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),0 100%);
+}
+
+.contenido_banner_bottom .contenido_banner_bottom-bg .h2_contenido_banner {
+    color: var(--color-texto-banner);
+    font-family: var(--fuentePrincipal);
+
+    padding-top: 2.5rem;
+    padding-bottom: 3.4rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+
+}
+/** Redes Sociales **/
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+/* .contenido-redes_sociales {
+
+} */
+
+.contenido-redes_sociales .texto_redes_sociales {
+   font-family: var(--fuenteSecundaria); 
+   font-size: 1.5rem; 
+   font-weight: normal;
+}
+
+.iconos-redes-sociales {
+  display: flex;
+  justify-content: center;
+}
+
+.iconos-redes-sociales .size-icon {
+    font-size: 2rem;
+}
+
+.iconos-redes-sociales .padding-icon{
+    padding-left: .8rem;
+    padding-right: .8rem;
+}
+
+.iconos-redes-sociales .color-bg{
+    color: var(--color-3);
 }
