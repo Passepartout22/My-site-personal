@@ -290,7 +290,7 @@ body {
 
 .button-container-2 button {
     width: 101%;
-    height: 102%;
+    height: 105%;
     font-family: var(--fuenteSecundaria);
     font-weight: 300;
     font-size: 1.2rem;
@@ -316,7 +316,7 @@ body {
     position: absolute;
     color: var(--color-3);
     text-align: center;
-    width: 102%;
+    width: 105%;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     position: absolute;
