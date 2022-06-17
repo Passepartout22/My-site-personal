@@ -207,6 +207,9 @@ body {
 
 /** Sobre mí **/
 
+.contenido-texto {
+    padding-bottom: 2rem;
+}
 
 @media (max-width: 768px) {
 
@@ -243,8 +246,6 @@ body {
 
 .p_contenido-texto--sobremi {
     font-size: 1.3rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
 }
 
 .contenido-img {
@@ -253,8 +254,8 @@ body {
 }
 
 .contenido-img .imagen_redonda {
-    width: 18ch;
-    height: 18ch;
+    width: 20ch;
+    height: 20ch;
     border-radius: 10rem;
 
 
@@ -392,6 +393,9 @@ body {
     background-image: radial-gradient(circle at 107.92% 90.56%, #d4c8ff 0, #9d9df2 50%, #6d73b0 100%);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), 0 100%);
     max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
 }
 
 .banner_bottom .contenido_banner_bottom-bg .h2_contenido_banner {
@@ -400,9 +404,7 @@ body {
     color: var(--color-texto-banner);
     font-family: var(--fuentePrincipal);
 
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-    padding-left: 3rem;
+    
 
 }
 
