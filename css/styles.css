@@ -393,9 +393,18 @@ body {
     background-image: radial-gradient(circle at 107.92% 90.56%, #d4c8ff 0, #9d9df2 50%, #6d73b0 100%);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), 0 100%);
     max-width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    
     padding-left: 3rem;
+}
+
+@media (max-width:768px) {
+    .banner_bottom .contenido_banner_bottom-bg {
+        background-image: radial-gradient(circle at 107.92% 90.56%, #d4c8ff 0, #9d9df2 50%, #6d73b0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), 0 100%);
+        max-width: 100%;
+        padding-top: 1rem;
+    padding-bottom: 2rem;
+    }
 }
 
 .banner_bottom .contenido_banner_bottom-bg .h2_contenido_banner {
