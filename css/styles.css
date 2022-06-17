@@ -253,8 +253,8 @@ body {
 }
 
 .contenido-img .imagen_redonda {
-    width: 15ch;
-    height: 15ch;
+    width: 18ch;
+    height: 18ch;
     border-radius: 10rem;
 
 
@@ -290,7 +290,7 @@ body {
 
 .button-container-2 button {
     width: 101%;
-    height: 100%;
+    height: 102%;
     font-family: var(--fuenteSecundaria);
     font-weight: 300;
     font-size: 1.2rem;
