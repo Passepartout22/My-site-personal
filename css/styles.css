@@ -246,6 +246,15 @@ body {
 
 .p_contenido-texto--sobremi {
     font-size: 1.3rem;
+    
+}
+
+@media (min-width: 768px) {
+    .p_contenido-texto--sobremi {
+        font-size: 1.3rem;
+        width: 125%;
+    }
+    
 }
 
 .contenido-img {
