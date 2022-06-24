@@ -23,7 +23,8 @@ body {
 
 @media (min-width:768px) {
     .navegacion {
-        padding: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
     }
 }
 
@@ -125,7 +126,7 @@ body {
 }
 
 .banner-bg {
-    background-image: radial-gradient(circle at 107.92% 90.56%, #d4c8ff 0, #9d9df2 50%, #6d73b0 100%);
+    background-image: radial-gradient(circle at 107.92% 90.56%, #d4c8ff 0, #8888f0 50%, #4a5092 100%);
 
     border-radius: 1.5rem;
 
@@ -159,15 +160,25 @@ body {
 }
 
 .contenido_imagen .imagen_banner {
-    width: 20ch;
-
+   display: none;
 }
 
+
 @media (min-width:768px) {
+
+    .contenido_imagen .imagen_banner {
+        display: block;
+        position: absolute;
+        right: 3ch;
+        top: 5ch;
+        width: 34rem;
+    }
+
+    
     .contenido_main {
         padding-top: 1.2rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
     }
 
     .banner-bg {
@@ -296,6 +307,26 @@ body {
 
     display: inline-block;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .button-container-2 {
+        position: relative;
+        width: 45%;
+        height: 55px;
+        margin-right: auto;
+        overflow: hidden;
+        border: 1px solid var(--color-3);
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        transition: 0.5s;
+        letter-spacing: 1px;
+        border-radius: 4rem;
+    
+        display: inline-block;
+        text-align: center;
+    }
 }
 
 .button-container-2 button {
